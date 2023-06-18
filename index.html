@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Welcome Adu</title>
+</head>
+<body>
+<style>
+body{
+font-family: sans-serif;
+}
+.text{
+text-align: center;
+text-weight: bold;
+width: 230px;
+height: 60px;
+}
+</style>
+<script>
+function checkName() {
+let namer = document.getElementById('name').value
+
+if(namer == "adu"){
+alert('adu Please!')
+}else if(namer == "aditya"){
+alert('aditya please!!')
+}else if(namer == ""){
+alert('bro please type your name!')
+}else{
+alert('its none of your bussiness ' + namer)
+window.close('index.html')
+}
+}
+</script>
+<h1>Bro adu please muje idea dede aur me terko mere project aur team pe add karunga!</h1>
+<br>
+<br>
+<input type="text" id="name" placeholder="Type your name please" class="text"> <input type="submit" value="Submit" onclick="checkName()">
+</body>
+</html>
